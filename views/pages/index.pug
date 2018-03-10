@@ -1,8 +1,30 @@
 extends ../main.layout.pug
 
 block variables
-  - var title = 'Главная страница'
+	- var title = 'Главная страница'
 
 block content
-  h1 Главная страница
-  .block
+	.wrapper.main-page
+		header.main-header
+			section.about
+				.about-img
+					img(src="images/content/Ira-Noschenko.jpg", class="about-img-src", alt="Ира Нощенко")
+				h1.about-ttl Ира Нощенко
+				h2.about-subttl Личный сайт веб разработчика
+				ul.social-wrap
+					li.social-item
+						a.social-link.vk-ico вКонтакте
+					li.social-item
+						a.social-link.gt-ico Github
+					li.social-item
+						a.social-link.ln-ico Linkedin
+			nav.main-nav
+				ul.nav-wrap
+					li.nav-item
+						a(href="/works", class="nav-link") Мои работы
+					li.nav-item
+						a(href="/about", class="nav-link") Обо мне
+					li.nav-item
+						a(href="/blog", class="nav-link") Блог
+
+

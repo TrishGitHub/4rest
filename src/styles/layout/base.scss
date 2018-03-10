@@ -15,8 +15,10 @@ body {
   overflow: hidden;
   min-height: 100%;
   position: relative;
+  
+  &.main-page { background: url("/images/bg/water.jpg") 50% 50% no-repeat; }
 }
-
+.main-nav {width: 100%; }
 .footer-container {
   position: absolute;
   bottom: 0;
